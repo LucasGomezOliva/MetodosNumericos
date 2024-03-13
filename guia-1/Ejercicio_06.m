@@ -28,4 +28,4 @@ Xa = ForwardSubstitution(Aa, Ba)
 disp('Solucion de ejercico 06-B')
 
 
-
+Xb = ForwardSubstitution(Aa, Ba)
