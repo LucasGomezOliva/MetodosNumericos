@@ -18,5 +18,5 @@ B = [2 5 8 -3 1]';
 
 disp('Solución del sistema tridiagonal del Ejercicio 10b):')
 Sol_X=Sol_Sist_Tridiag(A,B)
-
+Sol_X_M=A\B
 

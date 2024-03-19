@@ -18,6 +18,7 @@ B = [0 1 2 2]';
 
 disp('Coeficientes del polinomio del Ejercicio 8b):')
 Coef_Poli = Triang_Gauss(A,B)
+Coef_Poli_M=A\B
 
 X=[0 1 2 3]; % Coordenadas por donde pasa el polinomio
 Y=[0 1 2 2];

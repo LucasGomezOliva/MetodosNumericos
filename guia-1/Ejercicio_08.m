@@ -3,23 +3,33 @@ clc
 
 %% Ejercicio 08-A
 
-Aa=[]
+Aa=[1,1,1;
+    4,2,1;
+    9,3,1]             %%   Matriz de 3x3
 
-Ba=[]
+Ba=[4,7,14]'           %%   Matriz 1x3
 
 disp('Solucion ejercicio 08-A')
-
-%%Xa = Triang_Gauss_Inf(Aa,Ba)
+Xa = Triang_Gauss(Aa,Ba);
+Xa_M=Aa\Ba;
+disp('Gauss     |   Matlab')
+[Xa,Xa_M]
 
 %% Ejercicio 08-B
 
-Ab=[]
+Ab=[0,0,0,1;
+    1,1,1,1;
+    8,4,2,1;
+    27,9,3,1]   %%Matriz de 4x4
 
-Bb=[]
+Bb=[0,1,2,2]'                           %%Matriz de 1x4
 
 disp('Solucion ejercicio 08-B')
 
-%%Xa = Triang_Gauss_Inf(Ab,Bb)
+Xb = Triang_Gauss(Ab,Bb);
+Xb_M=Ab\Bb;
+disp('Gauss     |   Matlab')
+[Xb,Xb_M]
 
 %% Ejercicio 08-C
 
@@ -29,7 +39,10 @@ Bc=[9,9,26,32]'
 
 disp('Solucion ejercicio 08-C')
 
-%%Xb = Triang_Gauss_Inf(Ac,Bc)
+Xc = Triang_Gauss(Ac,Bc);
+Xc_M=Ac\Bc;
+
+[Xc,Xc_M]
 
 %% Ejercicio 08-D
 
@@ -56,6 +69,9 @@ Bd
 
 disp('Solucion ejercicio 08-D')
 
-%%Xd = Triang_Gauss_Inf(Ad,Bd)
+Xd = Triang_Gauss(Ad,Bd);
+Xd_M = Ad\Bd;
+
+[Xd,Xd_M]
 
 
