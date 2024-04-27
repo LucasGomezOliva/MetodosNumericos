@@ -15,11 +15,13 @@ y_t = X(:,2);  % solución y(t)
 figure(1);
 x_v=-2.*exp(T)+4.*(exp(T)).*cos(T).^2-12.*(exp(T)).*cos(T).*sin(T);
 plot(T,x_t,'ro',T,x_v,'b');
-xlabel('x(t) (s)');
-ylabel('y(t). Sol. Aprox. roja; Sol. Verd. Azul');
+grid;
+xlabel('t (s)');
+ylabel('x(t). Sol. Aprox. roja; Sol. Verd. Azul');
 
 figure(2);
 y_v=-3.*exp(T)+6.*(exp(T)).*cos(T).^2+2.*(exp(T)).*cos(T).*sin(T);
 plot(T,y_t,'ro',T,y_v,'b');
-xlabel('y(t) (s)');
+grid;
+xlabel('t (s)');
 ylabel('y(t). Sol. Aprox. roja; Sol. Verd. Azul');
