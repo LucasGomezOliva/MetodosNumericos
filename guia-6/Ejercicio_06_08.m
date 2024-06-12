@@ -49,11 +49,11 @@ disp('-----------------------------------------')
 a=(1/7).*pi();
 b=(1/4).*pi();
 M=100;
-RTC = Regla_Trapezoidal_Compuesta('Funcion_06_c',a,b,M);
-RST = Regla_Simpson_Compuesta('Funcion_06_c',a,b,M);
-disp('Ejercicio c - Regla_Trapezoidal_Compuesta');
+RTC = Regla_Trapezoidal_Compuesta('Funcion_06_d',a,b,M);
+RST = Regla_Simpson_Compuesta('Funcion_06_d',a,b,M);
+disp('Ejercicio D - Regla_Trapezoidal_Compuesta');
 RTC
-disp('Ejercicio c - Regla_Simpson_Compuesta');
+disp('Ejercicio D - Regla_Simpson_Compuesta');
 RST
 
 disp('-----------------------------------------')
